@@ -13,7 +13,7 @@ export const heroData = {
   name: 'Clayton Whittaker',
   subtitle: `I have a passion for turning ideas into reality,
   solving problems and providing workable solutions`,
-  cta: 'Know More',
+  cta: 'Learn More',
 };
 
 // ABOUT DATA
