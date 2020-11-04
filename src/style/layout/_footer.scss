@@ -10,21 +10,6 @@
   &__text {
     color: darken(white, 50%);
     font-size: 1.3rem;
-
-    a {
-      color: darken(white, 50%);
-      font-size: 1.3rem;
-      transition: all 0.4s;
-      display: inline-block;
-      background-color: $dark-grey;
-
-      &:hover,
-      &:active {
-        color: $primary-color;
-        -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-      }
-    }
   }
 
   & hr {
@@ -53,7 +38,7 @@
     transition: all 0.2s ease-in;
 
     &:hover {
-      transform: translateY(-2px);
+      transform: translateY(-10px);
     }
   }
 }
@@ -65,6 +50,6 @@
   cursor: pointer;
 
   &:hover {
-    transform: translateY(-2px);
+    transform: translateY(-10px);
   }
 }
