@@ -77,6 +77,14 @@ export const contactData = {
   email: 'clayton.whittaker@gmail.com',
 };
 
+// SKILLS DATA
+export const skillsData = {
+  Languages: ['HTML', 'JavaScript', 'CSS', 'Python', 'SQL'],
+  Frontend: ['React', 'Redux', 'jQuery', 'Bootstrap', 'MaterialUI', 'SASS', 'Jasmine'],
+  Backend: ['nodejs', 'Express', 'Flask', 'PostgreSQL', 'Jest', 'Mongodb', 'Passport'],
+  Other: ['git', 'GitHub', 'Heroku', 'Netlify', 'NPM', 'Linux'],
+};
+
 // FOOTER DATA
 export const footerData = {
   networks: [
