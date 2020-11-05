@@ -14,40 +14,44 @@ const Skills = () => {
       <Container>
         <div className="skills-wrapper">
           <Title title="Skills" />
-          {Object.keys(skills).map((skillType) => {
+          {skills.map((skillGroup) => {
+            const { id, heading, skillList } = skillGroup;
             return (
-              <>
-                <h4 className="skills-wrapper__text-title">{skillType}</h4>
+              <div key={id}>
+                <h4 className="skills-wrapper__text-title">{heading}</h4>
                 <hr />
                 <Row>
-                  {skills[skillType].map((skill) => (
-                    <Col xl={2} lg={3} sm={4}>
-                      <Fade bottom duration={1000} delay={500} distance="30px">
-                        <div className="skill-wrapper__image">
-                          <Tilt
-                            options={{
-                              reverse: false,
-                              max: 8,
-                              perspective: 100,
-                              scale: 1,
-                              speed: 300,
-                              transition: true,
-                              axis: null,
-                              reset: true,
-                              easing: 'cubic-bezier(.03,.98,.52,.99)',
-                            }}
-                          >
-                            <div data-tilt className="thumbnail rounded">
-                              <SkillImg alt="skill logo" filename={`skills/${skill}.png`} />
-                            </div>
-                          </Tilt>
-                        </div>
-                        <p className="pt-2 skills-wrapper__text-name">{skill}</p>
-                      </Fade>
-                    </Col>
-                  ))}
+                  {skillList.map((skill) => {
+                    const { skillId, name } = skill;
+                    return (
+                      <Col xl={2} lg={3} sm={4} key={skillId}>
+                        <Fade bottom duration={1000} delay={500} distance="30px">
+                          <div className="skill-wrapper__image">
+                            <Tilt
+                              options={{
+                                reverse: false,
+                                max: 8,
+                                perspective: 100,
+                                scale: 1,
+                                speed: 300,
+                                transition: true,
+                                axis: null,
+                                reset: true,
+                                easing: 'cubic-bezier(.03,.98,.52,.99)',
+                              }}
+                            >
+                              <div data-tilt className="thumbnail rounded">
+                                <SkillImg alt="skill logo" filename={`skills/${name}.png`} />
+                              </div>
+                            </Tilt>
+                          </div>
+                          <p className="pt-2 skills-wrapper__text-name">{name}</p>
+                        </Fade>
+                      </Col>
+                    );
+                  })}
                 </Row>
-              </>
+              </div>
             );
           })}
         </div>

@@ -78,12 +78,57 @@ export const contactData = {
 };
 
 // SKILLS DATA
-export const skillsData = {
-  Languages: ['HTML', 'JavaScript', 'CSS', 'Python', 'SQL'],
-  Frontend: ['React', 'Redux', 'jQuery', 'Bootstrap', 'MaterialUI', 'SASS', 'Jasmine'],
-  Backend: ['nodejs', 'Express', 'Flask', 'PostgreSQL', 'Jest', 'Mongodb', 'Passport'],
-  Other: ['git', 'GitHub', 'Heroku', 'Netlify', 'NPM', 'Linux'],
-};
+export const skillsData = [
+  {
+    id: nanoid(),
+    heading: 'Languages',
+    skillList: [
+      { id: nanoid(), name: 'HTML' },
+      { id: nanoid(), name: 'JavaScript' },
+      { id: nanoid(), name: 'CSS' },
+      { id: nanoid(), name: 'Python' },
+      { id: nanoid(), name: 'SQL' },
+    ],
+  },
+  {
+    skillId: nanoid(),
+    heading: 'Frontend',
+    skillList: [
+      { id: nanoid(), name: 'React' },
+      { id: nanoid(), name: 'Redux' },
+      { id: nanoid(), name: 'jQuery' },
+      { id: nanoid(), name: 'Bootstrap' },
+      { id: nanoid(), name: 'MaterialUI' },
+      { id: nanoid(), name: 'SASS' },
+      { id: nanoid(), name: 'Jasmine' },
+    ],
+  },
+  {
+    id: nanoid(),
+    heading: 'Backend',
+    skillList: [
+      { id: nanoid(), name: 'nodejs' },
+      { id: nanoid(), name: 'Express' },
+      { id: nanoid(), name: 'Flask' },
+      { id: nanoid(), name: 'PostgreSQL' },
+      { id: nanoid(), name: 'Jest' },
+      { id: nanoid(), name: 'Mongodb' },
+      { id: nanoid(), name: 'Passport' },
+    ],
+  },
+  {
+    id: nanoid(),
+    heading: 'Other',
+    skillList: [
+      { id: nanoid(), name: 'git' },
+      { id: nanoid(), name: 'GitHub' },
+      { id: nanoid(), name: 'Heroku' },
+      { id: nanoid(), name: 'Netlify' },
+      { id: nanoid(), name: 'NPM' },
+      { id: nanoid(), name: 'Linux' },
+    ],
+  },
+];
 
 // FOOTER DATA
 export const footerData = {

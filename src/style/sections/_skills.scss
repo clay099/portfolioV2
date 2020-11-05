@@ -7,9 +7,11 @@
   margin-bottom: -1px;
   color: $white-color;
 
-  @include respond(tab-land) {
+  @include respond(tab-port) {
     margin-top: 0;
     padding-top: 5rem;
+    -webkit-clip-path: none;
+    clip-path: none;
   }
 
   .skills-wrapper {

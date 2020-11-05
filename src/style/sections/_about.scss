@@ -8,7 +8,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
 
-  @include respond(tab-land) {
+  @include respond(tab-port) {
     height: 100%;
     -webkit-clip-path: none;
     clip-path: none;

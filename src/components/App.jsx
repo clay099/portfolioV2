@@ -22,7 +22,7 @@ function App() {
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
-  const [skills, setSkills] = useState({});
+  const [skills, setSkills] = useState([]);
   const [footer, setFooter] = useState({});
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function App() {
     setAbout({ ...aboutData });
     setProjects([...projectsData]);
     setContact({ ...contactData });
-    setSkills({ ...skillsData });
+    setSkills([...skillsData]);
     setFooter({ ...footerData });
   }, []);
 
