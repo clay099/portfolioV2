@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Badge } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, id, stack } = project;
 
             return (
               <Row key={id}>
@@ -45,6 +45,15 @@ const Projects = () => {
                       <div>
                         <p>{info}</p>
                         {info2 && <p className="mb-4">{info2}</p>}
+                        {stack &&
+                          stack.map((technology) => {
+                            const { stackId, tech } = technology;
+                            return (
+                              <Badge className="project-wrapper__badge shadow-sm" key={stackId}>
+                                {tech}
+                              </Badge>
+                            );
+                          })}
                       </div>
                       <a
                         target="_blank"
