@@ -76,7 +76,7 @@ const Projects = () => {
                     delay={1000}
                     distance="30px"
                   >
-                    <div className="project-wrapper__image">
+                    <div className="project-wrapper__image shadow">
                       <a
                         href={url || '#!'}
                         target="_blank"
