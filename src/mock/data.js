@@ -20,7 +20,7 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    'I am a Software Engineer who believes that technology can improve the user experience to ensure client satisfaction and deliver sustained business growth.',
+    'I am a Software Engineer who believes that technology can improve the user experience, ensure client satisfaction and deliver sustained business growth.',
   paragraphTwo:
     'I started my professional career working in the financial services industry in Australia. During this time, I focused on enhancing existing technology efficiencies. This experience led to a real passion for technology and automation.',
   paragraphThree:
