@@ -30,7 +30,7 @@ const Skills = () => {
                             <Tilt
                               options={{
                                 reverse: false,
-                                max: 8,
+                                max: 20,
                                 perspective: 100,
                                 scale: 1,
                                 speed: 300,
