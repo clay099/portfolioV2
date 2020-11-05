@@ -12,7 +12,7 @@ export const heroData = {
   title: 'Hello, my name is ',
   name: 'Clayton Whittaker',
   subtitle: `I have a passion for turning ideas into reality,
-  solving problems and providing workable solutions`,
+  solving problems and providing workable solutions.`,
   cta: 'Learn More',
 };
 
@@ -22,9 +22,9 @@ export const aboutData = {
   paragraphOne:
     'I am a Software Engineer who believes that technology can improve the user experience to ensure client satisfaction and deliver sustained business growth.',
   paragraphTwo:
-    'I started my professional career working in the financial services industry in Australia. During this time i focused on enhancing existing technology efficiencies. This experience led to a real passion for technology and automation.',
+    'I started my professional career working in the financial services industry in Australia. During this time, I focused on enhancing existing technology efficiencies. This experience led to a real passion for technology and automation.',
   paragraphThree:
-    'I always seek opportunities and challenges that can provide a meaningful improvement to our ever day lives.',
+    'I enjoy seeking opportunities and challenges that can provide meaningful improvements to our ever day lives.',
   resume: 'https://drive.google.com/file/d/1-8ueKcfJDcuMTVw5-yhysivro4gX-NA1/view?usp=sharing',
 };
 
@@ -35,7 +35,7 @@ export const projectsData = [
     img: 'ProjectFreelanceImg.png',
     title: 'Project Freelance',
     info:
-      'Full stack Peer-To-Peer Outsourcing Project. General site users can create jobs, find local contractors and post reviews. Tradesmen can be matched with available jobs in their area',
+      'Full stack Peer-To-Peer Outsourcing Project. General site users can create jobs, find local contractors and post reviews. Tradesmen can be matched with available jobs in their area.',
     info2: '',
     stack: [
       { stackId: nanoid(), tech: 'React' },
@@ -54,7 +54,7 @@ export const projectsData = [
     img: 'StockTrackerImg.png',
     title: 'Stock Tracking Application',
     info:
-      'This Project allows for users to create a fake stock portfolio and track its profit & loss over time',
+      'This Project allows for users to create a fake stock portfolio and track its profit and loss over time. Users can also review company news, detailed financial information and other similar organizations.',
     info2: '',
     stack: [
       { stackId: nanoid(), tech: 'Flask' },
@@ -70,7 +70,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'Connect4Img.png',
     title: `Connect 4 Game`,
-    info: `Fully functional connect four game. All DOM and game logic is implemented with Vanilla Javascript & styling with CSS`,
+    info: `Fully functional connect four game. All DOM and game logic is implemented with Vanilla Javascript & styling with CSS.`,
     info2: '',
     stack: [
       { stackId: nanoid(), tech: 'Javascript' },
@@ -83,7 +83,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'JoblyImg.png',
     title: `Jobly`,
-    info: `Full stack (front-end & back-end) Job board. Back-end API has full REST principles`,
+    info: `Full stack (front-end & back-end) Job board. Back-end API follows full REST principles`,
     info2: '',
     stack: [
       { stackId: nanoid(), tech: 'React' },
