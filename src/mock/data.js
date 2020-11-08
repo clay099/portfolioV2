@@ -24,7 +24,7 @@ export const aboutData = {
   paragraphTwo:
     'I started my professional career working in the financial services industry in Australia. During this time, I focused on enhancing existing technology efficiencies. This experience led to a real passion for technology and automation.',
   paragraphThree:
-    'I enjoy seeking opportunities and challenges that can provide meaningful improvements to our ever day lives.',
+    'I enjoy seeking opportunities and challenges that can provide meaningful improvements to our every day lives.',
   resume: 'https://drive.google.com/file/d/1-8ueKcfJDcuMTVw5-yhysivro4gX-NA1/view?usp=sharing',
 };
 
