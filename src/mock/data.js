@@ -34,9 +34,12 @@ export const projectsData = [
     id: nanoid(),
     img: 'ProjectFreelanceImg.png',
     title: 'Project Freelance',
-    info:
-      'Full stack Peer-To-Peer Outsourcing Project. General site users can create jobs, find local contractors and post reviews. Tradesmen can be matched with available jobs in their area.',
-    info2: '',
+    subTitle:
+      'Peer-to-peer outsourcing application (front-end & back-end) to match user with tradesmen for real world projects.',
+    info: [
+      'Architected and implemented a modular backend infrastructure including custom Object Relational Mapping (ORM) following full RESTful principles.',
+      'Built a custom front-end UI. Along with a full Redux Store including persisting data and client-side routing',
+    ],
     stack: [
       { stackId: nanoid(), tech: 'React' },
       { stackId: nanoid(), tech: 'Express' },
@@ -53,9 +56,13 @@ export const projectsData = [
     id: nanoid(),
     img: 'StockTrackerImg.png',
     title: 'Stock Tracking Application',
-    info:
-      'This Project allows for users to create a fake stock portfolio and track its profit and loss over time. Users can also review company news, detailed financial information and other similar organizations.',
-    info2: '',
+    subTitle:
+      'Stock tracking application designed to let users create a stock portfolio and track its performance over time.',
+    info: [
+      'Connected to a third-party API to collect Stock data. Combined collected data with custom classes for data manipulation',
+      'Implemented secure data transfer via hash encryption',
+      'Obtained over 90% of test coverage with unit, integration, and functional testing.',
+    ],
     stack: [
       { stackId: nanoid(), tech: 'Flask' },
       { stackId: nanoid(), tech: 'SQLAlchemy' },
@@ -68,23 +75,15 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'Connect4Img.png',
-    title: `Connect 4 Game`,
-    info: `Fully functional connect four game. All DOM and game logic is implemented with Vanilla Javascript & styling with CSS.`,
-    info2: '',
-    stack: [
-      { stackId: nanoid(), tech: 'Javascript' },
-      { stackId: nanoid(), tech: 'CSS' },
-    ],
-    url: `https://clay099.github.io/connect-four/`,
-    repo: `https://github.com/clay099/connect-four`,
-  },
-  {
-    id: nanoid(),
     img: 'JoblyImg.png',
     title: `Jobly`,
-    info: `Full stack (front-end & back-end) Job board. Back-end API follows full REST principles`,
-    info2: '',
+    subTitle: `Full stack (front-end & back-end) Job board.`,
+    info: [
+      'Designed a custom Back-end API following full RESTful principles and seeded with fake user data',
+      'Modern UI/UX platform for users to interact and apply to back-end jobs',
+      'Obtained 95% test coverage with unit, integration, and functional testing.',
+      'Implemented full CI/CD using Travis CI',
+    ],
     stack: [
       { stackId: nanoid(), tech: 'React' },
       { stackId: nanoid(), tech: 'Express' },
@@ -96,6 +95,19 @@ export const projectsData = [
     ],
     url: `https://job-app-demo.netlify.app/`,
     repo: `https://github.com/clay099/jobly-frontend`,
+  },
+  {
+    id: nanoid(),
+    img: 'Connect4Img.png',
+    title: `Connect 4 Game`,
+    subTitle: `Fully functional connect four game`,
+    info: ['All DOM and game logic is implemented with Vanilla Javascript & styling with CSS.'],
+    stack: [
+      { stackId: nanoid(), tech: 'Javascript' },
+      { stackId: nanoid(), tech: 'CSS' },
+    ],
+    url: `https://clay099.github.io/connect-four/`,
+    repo: `https://github.com/clay099/connect-four`,
   },
 ];
 

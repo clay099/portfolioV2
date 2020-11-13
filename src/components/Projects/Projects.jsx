@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id, stack } = project;
+            const { title, subTitle, info, url, repo, img, id, stack } = project;
 
             return (
               <Row key={id}>
@@ -43,8 +43,11 @@ const Projects = () => {
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title}</h3>
                       <div>
-                        <p>{info}</p>
-                        {info2 && <p className="mb-4">{info2}</p>}
+                        <p className="project-wrapper__text-subtitle">{subTitle}</p>
+                        {info &&
+                          info.map((point) => {
+                            return <p className="mb-4">{point}</p>;
+                          })}
                         {stack &&
                           stack.map((technology) => {
                             const { stackId, tech } = technology;
