@@ -2,8 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
-import Particles from 'react-particles-js';
 import PortfolioContext from '../../context/context';
+import ParticleBackGround from '../ParticleBackGround/ParticleBackGround';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -24,19 +24,7 @@ const Header = () => {
 
   return (
     <section id="hero" className="jumbotron">
-      <Particles
-        params={{
-          particles: {
-            line_linked: {
-              shadow: {
-                enable: true,
-                color: '#111111',
-                blur: 1,
-              },
-            },
-          },
-        }}
-      />
+      <ParticleBackGround />
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
