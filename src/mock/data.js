@@ -126,6 +126,7 @@ export const skillsData = [
     skillList: [
       { id: nanoid(), name: 'HTML' },
       { id: nanoid(), name: 'JavaScript' },
+      { id: nanoid(), name: 'TypeScript' },
       { id: nanoid(), name: 'CSS' },
       { id: nanoid(), name: 'Python' },
       { id: nanoid(), name: 'SQL' },
