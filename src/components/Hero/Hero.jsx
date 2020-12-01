@@ -1,9 +1,10 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect, Suspense } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-import ParticleBackGround from '../ParticleBackGround/ParticleBackGround';
+
+const ParticleBackGround = React.lazy(() => import('../ParticleBackGround/ParticleBackGround'));
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -24,7 +25,9 @@ const Header = () => {
 
   return (
     <section id="hero" className="jumbotron">
-      <ParticleBackGround />
+      <Suspense fallback={<div />}>
+        <ParticleBackGround />
+      </Suspense>
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
