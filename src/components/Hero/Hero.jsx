@@ -34,9 +34,7 @@ const Header = () => {
           </h1>
           <div className="hero-subtitle">
             <h2 className="hero-subtitle-text">{subtitle}</h2>
-            <h2 className="hero-subtitle-text">
-              {subtitle2 ? <SubtitleArray subtitle2={subtitle2} /> : null}
-            </h2>
+            {subtitle2 ? <SubtitleArray subtitle2={subtitle2} /> : null}
           </div>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

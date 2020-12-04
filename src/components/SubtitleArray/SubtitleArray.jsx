@@ -19,7 +19,7 @@ const SubtitleArray = ({ subtitle2 }) => {
         showIdx % subtitle2.length === i ? `hero-subtitle-show-active` : 'hero-subtitle-show-hidden'
       }
     >
-      {show}
+      <h2 className="hero-subtitle-text">{show}</h2>
     </div>
   ));
 
