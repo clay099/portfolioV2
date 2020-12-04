@@ -28,4 +28,4 @@ const SubtitleArray = ({ subtitle2 }) => {
 
 export default SubtitleArray;
 
-SubtitleArray.propTypes = { subtitle2: PropTypes.arrayof(PropTypes.string) };
+SubtitleArray.propTypes = { subtitle2: PropTypes.instanceOf(Array) };
