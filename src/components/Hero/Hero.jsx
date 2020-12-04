@@ -4,10 +4,11 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import ParticleBackGround from '../ParticleBackGround/ParticleBackGround';
+import SubtitleArray from '../SubtitleArray/SubtitleArray';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { title, name, subtitle, subtitle2, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -30,10 +31,13 @@ const Header = () => {
           <h1 className="hero-title">
             {title}
             <span className="text-color-main">{name}</span>
-            {/* <br />
-            {subtitle} */}
           </h1>
-          <h2 className="hero-subtitle">{subtitle}</h2>
+          <div className="hero-subtitle">
+            <h2 className="hero-subtitle-text">{subtitle}</h2>
+            <h2 className="hero-subtitle-text">
+              {subtitle2 ? <SubtitleArray subtitle2={subtitle2} /> : null}
+            </h2>
+          </div>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
