@@ -19,11 +19,22 @@
     padding: 0rem $default-font-size;
   }
 
+  //for use with particleBackground
   #tsparticles {
     height: 100vh;
     width: calc(100vw - 11.2rem);
     z-index: 0;
     position: absolute;
+  }
+
+  //custom particle effect
+  #canvasHero {
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .hero-title {
