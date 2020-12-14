@@ -15,11 +15,12 @@ const SubtitleArray = ({ subtitle2 }) => {
 
   const display = subtitle2.map((show, i) => (
     <div
+      key={show.subId}
       className={
         showIdx % subtitle2.length === i ? `hero-subtitle-show-active` : 'hero-subtitle-show-hidden'
       }
     >
-      <h2 className="hero-subtitle-text">{show}</h2>
+      <h2 className="hero-subtitle-text">{show.text}</h2>
     </div>
   ));
 

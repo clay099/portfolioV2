@@ -111,9 +111,6 @@ export default function drawImageToCanvas({ canvas, ctx, pngImage: png }) {
     ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
     particlesArray.forEach((particle) => particle.update());
-    // for (let particle of particlesArray) {
-    //   particle.update();
-    // }
   }
 
   init();

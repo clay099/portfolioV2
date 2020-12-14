@@ -46,7 +46,11 @@ const Projects = () => {
                         <p className="project-wrapper__text-subtitle">{subTitle}</p>
                         {info &&
                           info.map((point) => {
-                            return <p className="mb-4">{point}</p>;
+                            return (
+                              <p key={point} className="mb-4">
+                                {point}
+                              </p>
+                            );
                           })}
                         {stack &&
                           stack.map((technology) => {

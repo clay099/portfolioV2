@@ -16,13 +16,14 @@ const Skills = () => {
           <Title title="Skills" />
           {skills.map((skillGroup) => {
             const { id, heading, skillList } = skillGroup;
+            console.log('id ', id, ' skill ', heading);
             return (
               <div key={id}>
                 <h4 className="skills-wrapper__text-title">{heading}</h4>
                 <hr />
                 <Row>
                   {skillList.map((skill) => {
-                    const { skillId, name } = skill;
+                    const { id: skillId, name } = skill;
                     return (
                       <Col xl={2} lg={3} sm={4} key={skillId}>
                         <Fade bottom duration={1000} delay={500} distance="30px">

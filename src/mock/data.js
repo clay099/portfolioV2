@@ -12,7 +12,11 @@ export const heroData = {
   title: 'Hello, my name is ',
   name: 'Clayton Whittaker',
   subtitle: `I have a passion for `,
-  subtitle2: ['turning ideas into reality', 'solving problems', 'providing workable solutions'],
+  subtitle2: [
+    { subId: nanoid(), text: 'turning ideas into reality' },
+    { subId: nanoid(), text: 'solving problems' },
+    { subId: nanoid(), text: 'providing workable solutions' },
+  ],
   cta: 'Learn More',
 };
 
@@ -133,7 +137,7 @@ export const skillsData = [
     ],
   },
   {
-    skillId: nanoid(),
+    id: nanoid(),
     heading: 'Frontend',
     skillList: [
       { id: nanoid(), name: 'React' },
