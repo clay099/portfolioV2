@@ -16,7 +16,6 @@ const Skills = () => {
           <Title title="Skills" />
           {skills.map((skillGroup) => {
             const { id, heading, skillList } = skillGroup;
-            console.log('id ', id, ' skill ', heading);
             return (
               <div key={id}>
                 <h4 className="skills-wrapper__text-title">{heading}</h4>
