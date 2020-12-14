@@ -1,4 +1,4 @@
-export default function drawImageToCanvas({ canvas, ctx, pngImage: png }) {
+export default function drawImageToCanvas({ canvas, ctx, png }) {
   let particlesArray = [];
 
   const mouse = {
