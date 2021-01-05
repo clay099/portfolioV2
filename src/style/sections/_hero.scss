@@ -35,6 +35,15 @@
     position: absolute;
     top: 0;
     left: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+  }
+  .canvasHero__hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .canvasHero__visible {
+    visibility: visible;
+    opacity: 1;
   }
 
   .hero-title {

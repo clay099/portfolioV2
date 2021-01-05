@@ -1,0 +1,25 @@
+#intro {
+  display: flex;
+  // margin-left: auto;
+  // margin-top: auto;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro__draw {
+  height: 500px;
+  width: 500px;
+
+  @include respond(phone) {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+.intro__hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 1s linear;
+}

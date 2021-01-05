@@ -26,7 +26,6 @@ const Header = () => {
 
   return (
     <section id="hero" className="jumbotron">
-      {/* {isDesktop ? <ParticleBackGround /> : null} */}
       {isDesktop ? <HeroParticles /> : null}
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">

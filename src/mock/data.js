@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 export const headData = {
   title: 'Clayton Whittaker | Full Stack Developer',
   lang: 'en',
-  description: 'Welcome to my portfolio website',
+  description: `Welcome to Clayton Whittaker's portfolio website. Looking for a Software Engineer? Ask Clayton how he can help`,
 };
 
 // HERO DATA
@@ -23,6 +23,7 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
+  imgAlt: 'Clayton Whittaker profile picture',
   paragraphOne:
     'I am a Software Engineer who believes that technology can improve the user experience, ensure client satisfaction and deliver sustained business growth.',
   paragraphTwo:
