@@ -35,6 +35,8 @@ function App() {
     setContact({ ...contactData });
     setSkills([...skillsData]);
     setFooter({ ...footerData });
+    // hid loader on mobile
+    if (window.innerWidth < 769) setHideIntro(true);
   }, []);
 
   // start animation to hide
