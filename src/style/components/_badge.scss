@@ -1,9 +1,16 @@
 .project-wrapper__badge {
-  color: $white-color;
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 40%);
-  border-image-slice: 1;
+  color: var(--white-color-text);
+  background-color: var(--secondary-color);
   margin: 5px 5px 10px 0px;
-  font-size: $default-font-size;
-  border-radius: 0.25rem;
+  font-size: var(--default-font-size);
+  border-radius: 1rem;
   z-index: 1;
+  transition: var(--transition-properties);
+}
+
+.theme-dark {
+  .project-wrapper__badge {
+    background-color: var(--alt-badge-background);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
 }

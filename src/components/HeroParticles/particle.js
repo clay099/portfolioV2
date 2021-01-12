@@ -1,4 +1,5 @@
-export default function drawImageToCanvas({ canvas, ctx, png }) {
+let id;
+function drawImageToCanvas({ canvas, ctx, png, backgroundRGBA = 'rgba(255,255,255,0.2)' }) {
   let particlesArray = [];
 
   const mouse = {
@@ -86,7 +87,7 @@ export default function drawImageToCanvas({ canvas, ctx, png }) {
     const x2 = data.width;
     for (let y = 0; y < y2; y += 1) {
       for (let x = 0; x < x2; x += 1) {
-        // number 128 or greater means 50% opacity (or alpha) as possbile range for alpha is clamped between 0 and 255
+        // number 128 or greater means 50% opacity (or alpha) as possible range for alpha is clamped between 0 and 255
         if (data.data[y * 4 * data.width + x * 4 + 3] > 128) {
           const positionX = x;
           const positionY = y;
@@ -104,10 +105,9 @@ export default function drawImageToCanvas({ canvas, ctx, png }) {
   }
 
   function animate() {
-    requestAnimationFrame(animate);
-
-    // draw white canvas over and over with alpha to let trail slowly disappear
-    ctx.fillStyle = 'rgba(255,255,255,0.2)';
+    id = requestAnimationFrame(animate);
+    // draw (white or black) canvas over and over with alpha to let trail slowly disappear
+    ctx.fillStyle = backgroundRGBA;
     ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
     particlesArray.forEach((particle) => particle.update());
@@ -116,3 +116,11 @@ export default function drawImageToCanvas({ canvas, ctx, png }) {
   init();
   animate();
 }
+
+const reset = ({ ctx, canvas }) => {
+  cancelAnimationFrame(id);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+};
+
+export default drawImageToCanvas;
+export { reset };

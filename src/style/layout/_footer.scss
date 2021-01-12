@@ -1,7 +1,8 @@
 .footer {
-  background-color: $dark-grey;
-  color: $white-color;
+  background-color: var(--dark-grey);
+  color: var(--white-color);
   padding: 4.8rem 0;
+  transition: var(--transition-properties);
 
   @include respond(phone) {
     border: 0px;
@@ -30,11 +31,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: $white-color;
+    color: var(--white-color);
     font-size: 3rem;
     width: 5rem;
     height: 5rem;
-    margin: $default-font-size $default-font-size;
+    margin: var(--default-font-size) var(--default-font-size);
     transition: all 0.2s ease-in;
 
     &:hover {
@@ -44,9 +45,9 @@
 }
 
 .back-to-top i {
-  color: $white-color;
-  margin: 1rem 0 $default-font-size;
-  transition: all 0.2s ease-in;
+  color: var(--white-color);
+  margin: 1rem 0 var(--default-font-size);
+  transition: all 0.25s ease-in-out;
   cursor: pointer;
 
   &:hover {

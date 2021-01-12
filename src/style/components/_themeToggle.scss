@@ -1,0 +1,56 @@
+.themeToggle {
+  position: fixed;
+  top: 3rem;
+  right: 5rem;
+  z-index: 1000;
+
+  button {
+    border-radius: 24px;
+  }
+}
+
+.custom-switch {
+  .custom-control-label::before {
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    transition: var(--transition-properties);
+  }
+  .custom-control-label::after {
+    top: 5px;
+    left: -19px;
+    width: 19px;
+    height: 19px;
+    border-radius: 25px;
+    transition: var(--transition-properties);
+  }
+
+  //moon display
+  .custom-control-input:not(:checked) ~ .custom-control-label::before {
+    display: relative;
+    font-family: 'FontAwesome';
+    content: '\f186';
+    color: rgb(221, 221, 44);
+    font-size: 18px;
+    font-weight: 900;
+    text-align: end;
+    padding: 0px 5px;
+    transition: none;
+  }
+
+  //sun display
+  .custom-control-input:checked ~ .custom-control-label::before {
+    display: flex;
+    font-family: 'FontAwesome';
+    content: '\f185';
+    color: rgb(226, 226, 3);
+    font-size: 18px;
+    font-weight: 900;
+    padding-left: 2px;
+  }
+
+  // move ball
+  .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(24px);
+  }
+}

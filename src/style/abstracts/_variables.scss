@@ -1,17 +1,54 @@
-// COLORS
-// $primary-color: #02aab0;
-// $secondary-color: #00cdac;
+:root {
+  // COLORS
+  --primary-color: rgb(0, 187, 250);
+  --secondary-color: rgb(129, 129, 255);
+  --light-background: #fff;
 
-$primary-color: rgb(0, 187, 250);
-$secondary-color: rgb(129, 129, 255);
+  --white-color: #fff;
+  --dark-grey: #333333;
 
-$white-color: #fff;
+  --white-color-text: var(--white-color);
+  --dark-blue-text: #272341; // For Headings
+  --light-gray-text: #6c757d; //for subtitles
 
-$dark-grey: #333333;
+  // FONT SIZE
+  --default-font-size: 1.6rem;
+  --big-font-size: 4rem;
+  --mid-font-size: 2.5rem;
 
-$dark-blue-text: #272341; // For Headings
+  --background-color: var(--light-background);
+  --transition-properties: all 1s ease-in-out;
+}
 
-// FONT SIZE
-$default-font-size: 1.6rem;
-$big-font-size: 4rem;
-$mid-font-size: 2.5rem;
+.theme-light {
+  // COLORS
+  // $primary-color: #02aab0;
+  // $secondary-color: #00cdac;
+
+  --primary-color: #00bbfa;
+  --secondary-color: rgb(129, 129, 255);
+  --light-background: #fff;
+
+  --white-color: #fff;
+  --dark-grey: #333333;
+
+  --white-color-text: var(--white-color);
+  --dark-blue-text: #272341; // For Headings
+  --light-gray-text: #6c757d; //for subtitles
+}
+
+.theme-dark {
+  --primary-color: #242424;
+  --secondary-color: #363636;
+  --light-background: var(--secondary-color);
+  --alt-badge-background: #464646;
+  --button-background: #4e4e4e;
+
+  --white-color: #fff;
+
+  --dark-grey: var(--primary-color);
+
+  --white-color-text: rgb(200, 200, 200);
+  --dark-blue-text: var(--white-color-text); // For Headings
+  --light-gray-text: var(--white-color-text); //for subtitles
+}

@@ -6,6 +6,7 @@ import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import Skills from './Skills/Skills';
 import Intro from './Intro/Intro';
+import ThemeToggle from './ThemeToggle/ThemeToggle';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -27,6 +28,7 @@ function App() {
   const [footer, setFooter] = useState({});
   const [hideIntro, setHideIntro] = useState(false);
   const [startHideIntro, setStartHideIntro] = useState(false);
+  const [darkTheme, setDarkTheme] = useState(false);
 
   useEffect(() => {
     setHero({ ...heroData });
@@ -59,18 +61,21 @@ function App() {
   }, [startHideIntro]);
 
   return (
-    <PortfolioProvider value={{ hero, about, projects, contact, skills, footer }}>
+    <PortfolioProvider
+      value={{ hero, about, projects, contact, skills, footer, darkTheme, setDarkTheme }}
+    >
       {!hideIntro ? (
         <Intro startHide={startHideIntro} />
       ) : (
-        <>
+        <div className={`theme theme-${darkTheme ? 'dark' : 'light'}`}>
           <Hero />
+          <ThemeToggle />
           <About />
           <Projects />
           <Skills />
           <Contact />
           <Footer />
-        </>
+        </div>
       )}
     </PortfolioProvider>
   );

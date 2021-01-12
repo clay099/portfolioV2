@@ -1,8 +1,9 @@
 #projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
-  margin-top: -15rem;
-  padding-top: 15rem;
+  background-color: var(--light-background);
+  color: var(--dark-blue-text);
+  margin-top: -18rem;
+  padding-top: 18rem;
+  transition: var(--transition-properties);
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -37,7 +38,7 @@
       &-title {
         font-weight: bold;
         margin-bottom: 0.5rem;
-        font-size: $mid-font-size;
+        font-size: var(--mid-font-size);
 
         @include respond(phone) {
           font-size: 2rem;
@@ -45,12 +46,13 @@
       }
 
       &-subtitle {
-        color: #6c757d !important;
+        color: var(--light-gray-text) !important;
         font-weight: bold;
+        transition: var(--transition-properties);
       }
 
       & p > a {
-        color: $secondary-color;
+        color: var(--secondary-color);
       }
     }
 
