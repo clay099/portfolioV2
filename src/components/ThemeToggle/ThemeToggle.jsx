@@ -29,7 +29,15 @@ const ThemeToggle = () => {
   return (
     <div className="themeToggle">
       <Form>
-        <Form.Check type="switch" id="dark-mode" onChange={handleChange} checked={darkTheme} />
+        <Form.Check type="checkbox" id="dark-mode2" className="custom-switch">
+          <Form.Check.Input
+            type="checkbox"
+            onChange={handleChange}
+            checked={darkTheme}
+            className="custom-control-input"
+          />
+          <Form.Check.Label className="custom-control-label" />
+        </Form.Check>
       </Form>
     </div>
   );
