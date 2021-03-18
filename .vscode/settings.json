@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["Jobly"]
+  "cSpell.words": ["Jobly"],
+  "jest.autoEnable": false
 }
