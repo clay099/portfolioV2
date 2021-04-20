@@ -37,6 +37,31 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'InstantMessenger.png',
+    title: 'Instant Messenger',
+    subTitle: 'Full stack web-based instant messaging application.',
+    info: [
+      'Implemented WebSocket’s for real-time communications between multiple users',
+      'Executed a front-end UI utilizing Material-UI based on provided SKETCH design files',
+      'Created a backend API to handle creating and storage of users, one on one chats & individual messages',
+    ],
+    stack: [
+      { stackId: nanoid(), tech: 'React' },
+      { stackId: nanoid(), tech: 'TypeScript' },
+      { stackId: nanoid(), tech: 'Express' },
+      { stackId: nanoid(), tech: 'Socket.io' },
+      { stackId: nanoid(), tech: 'Material-UI' },
+      { stackId: nanoid(), tech: 'Bcrypt' },
+      { stackId: nanoid(), tech: 'PostgreSQL' },
+      { stackId: nanoid(), tech: 'Sequelize' },
+      { stackId: nanoid(), tech: 'Mocha' },
+      { stackId: nanoid(), tech: 'Chia' },
+    ],
+    url: 'https://messenger.vercel.app/',
+    repo: 'https://github.com/clay099/messenger',
+  },
+  {
+    id: nanoid(),
     img: 'ProjectFreelanceImg.png',
     title: 'Project Freelance',
     subTitle:
