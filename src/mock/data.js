@@ -123,7 +123,7 @@ export const projectsData = [
       { stackId: nanoid(), tech: 'PostgreSQL' },
       { stackId: nanoid(), tech: 'Jest' },
     ],
-    url: `https://job-app-demo.netlify.app/`,
+    url: `https://cw-jobly-frontend.netlify.app/`,
     repo: `https://github.com/clay099/jobly-frontend`,
   },
   {
